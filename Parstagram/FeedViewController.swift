@@ -38,7 +38,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.loadPosts()
     }
     @objc func loadPosts(){
-        numberofPosts = 1
+        numberofPosts = 2
         let query = PFQuery(className:"Post")
         query.includeKey("author")
         query.limit = numberofPosts
